@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "c09ef668-ca16-4322-a457-1e0d9dafd3f2",
+		"name": "bootcamp-exercise3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32465055"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.coincap.io/v2/assets",
+					"host": [
+						"api",
+						"coincap",
+						"io"
+					],
+					"path": [
+						"v2",
+						"assets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get with path parameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.coincap.io/v2/assets/bitcoin",
+					"host": [
+						"api",
+						"coincap",
+						"io"
+					],
+					"path": [
+						"v2",
+						"assets",
+						"bitcoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get with query parameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.coincap.io/v2/assets?limit=5",
+					"host": [
+						"api",
+						"coincap",
+						"io"
+					],
+					"path": [
+						"v2",
+						"assets"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"key\": \"value\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://httpbin.org/post",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/post",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
